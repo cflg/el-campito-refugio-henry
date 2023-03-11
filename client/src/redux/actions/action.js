@@ -19,8 +19,6 @@ import {
 } from './types';
 import axios from 'axios';
 
-import dotenv from "dotenv";
-dotenv.config();
 // const {NAME_CLOUDINARY} = process.env;
 
 /* export default function postMeli(title, unit_price) {
@@ -191,7 +189,7 @@ export const getPress = () => {
   };
 };
 
-export const getProyectos= () => {
+export const getProyectos = () => {
   return async function (dispatch) {
     try {
       let json = await axios("/api/escolar")
